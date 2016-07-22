@@ -1,8 +1,10 @@
-package pers.cris.li.htmlinfohandle;
+package icefox.htmlinfohandletest;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import icefox.htmlinfohandle.GrabWebInfo;
 
 public class GrabWebInfoTest {
 

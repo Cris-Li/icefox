@@ -1,4 +1,4 @@
-package pers.cris.li.htmlinfohandle;
+package icefox.htmlinfohandle;
 
 import java.io.File;
 import java.io.IOException;
