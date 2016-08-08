@@ -17,6 +17,8 @@ import jxl.write.WritableSheet;
 import jxl.write.WritableWorkbook;
 
 public class GrabWebInfo {
+	private WindRankTransfer windTrans = new WindRankTransfer();
+	
 	public String webInfoHandle(String citi) {
 		String text = "";
 		try {
@@ -42,7 +44,7 @@ public class GrabWebInfo {
 	}
 
 	public void toExcel() throws Exception {
-		String path = "C:/Users/PF-083PK2/Documents/模型数据";
+		String path = "C:/Users/l_cry/Documents/模型数据";
 //		String name = "京津冀天气记录表";
 //		String[] citiesName = { "北京", "天津", "石家庄", "唐山", "保定", "廊坊", "邢台", "张家口", "秦皇岛", "衡水", "邯郸", "承德", "沧州" };
 //        String[] citi = {"beijing","tianjin","shijiazhuang","tangshan","baoding","langfang","xingtai","zhangjiakou","qinhuangdao","hengshui","handan","chengde","cangzhou"};
@@ -68,6 +70,7 @@ public class GrabWebInfo {
 			String[] texts = text.split("\n");
 			for (int j = 0; j < texts.length; j++) {
 				Label titleLabe2 = new Label(0, j+1, texts[j]);
+				
 				sheet.addCell(titleLabe2);
 				
 			}
